@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- SKILLSHINE Main Theme -->
-    <style name="Theme.SKILLSHINE" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.Healthgpt" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
         <item name="colorOnPrimary">@color/white</item>
