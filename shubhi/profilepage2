@@ -6,47 +6,64 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ProjectPage2">
-    <LinearLayout
+    android:background="#0B0B0B">
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp"
         android:layout_marginTop="10dp"
-        android:orientation="horizontal"
-        android:gravity="center_vertical">
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        android:backgroundTint="#0B0B0B"
+        app:strokeColor="#DDDDDD"
+        app:strokeWidth="1dp">
 
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:src="@drawable/arrow_small_left"
-            android:contentDescription="Back" />
-
-        <TextView
-            android:id="@+id/profileTitle"
-            android:layout_width="0dp"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Account Information"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:layout_weight="1" />
+            android:padding="16dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
 
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginEnd="16dp"
-            android:src="@drawable/search"
-            android:contentDescription="Search" />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/arrow_small_left"
+                android:contentDescription="Back"
+                app:tint="@android:color/white"/>
 
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:src="@drawable/heart"
-            android:contentDescription="Favorites" />
-    </LinearLayout>
+            <TextView
+                android:id="@+id/profileTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Account Information"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/search"
+                app:tint="@android:color/white"
+                android:contentDescription="Search" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:tint="@android:color/white"
+                android:src="@drawable/heart"
+                android:contentDescription="Favorites" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Email Address"
+        android:textColor="@color/white"
         android:id="@+id/email"
         android:textSize="18sp"
         android:layout_marginTop="10dp"
@@ -57,6 +74,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         app:cardCornerRadius="12dp"
+        android:backgroundTint="#212020"
         app:cardElevation="6dp">
 
         <EditText
@@ -64,6 +82,8 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:hint="Enter email address"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
             android:paddingHorizontal="16dp"
             android:inputType="textEmailAddress"
             android:background="@android:color/transparent"
@@ -75,6 +95,7 @@
         android:layout_height="wrap_content"
         android:text="Password"
         android:id="@+id/password"
+        android:textColor="@color/white"
         android:layout_marginTop="8dp"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -84,6 +105,7 @@
         android:layout_height="60dp"
         android:layout_margin="10dp"
         app:cardCornerRadius="12dp"
+        android:backgroundTint="#212020"
         app:cardElevation="6dp">
 
         <LinearLayout
@@ -98,18 +120,23 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
                 android:hint="Password 1233#@"
                 android:inputType="textPassword"
                 android:background="@android:color/transparent"
                 android:padding="8dp" />
 
+
             <ImageButton
-                android:id="@+id/eyeButton"
-                android:layout_width="36dp"
-                android:layout_height="36dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="16dp"
                 android:src="@drawable/eye"
+                android:scaleType="fitCenter"
                 android:background="@android:color/transparent"
-                android:contentDescription="Toggle password visibility" />
+                app:tint="@android:color/white" />
+
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
@@ -119,7 +146,7 @@
         android:id="@+id/button2"
         android:text="Save"
         android:textSize="18sp"
-        android:backgroundTint="#3A59D1"
+        android:backgroundTint="@color/info"
         android:layout_gravity="center"
         android:layout_marginTop="50dp"/>
 
