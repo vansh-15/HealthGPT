@@ -6,18 +6,19 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    android:background="#B7D7E8"
+    android:background="#0B0B0B"
     android:padding="16dp"
     tools:context=".MainActivity">
     <ImageView
         android:layout_width="24sp"
         android:layout_height="24sp"
-        android:src="@drawable/arror_left"/>
+        android:src="@drawable/arrow_small_left"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Set Password"
+        android:textColor="@android:color/white"
         android:textSize="25dp"
         android:id="@+id/text1"
         android:textStyle="bold"
@@ -28,6 +29,7 @@
         android:layout_height="wrap_content"
         android:text="New Password"
         android:textSize="16dp"
+        android:textColor="@android:color/white"
         android:textStyle="bold"
         android:layout_marginTop="35dp"
         android:id="@+id/text2"/>
@@ -37,16 +39,17 @@
         android:hint="New password"
         android:boxBackgroundMode="outline"
         app:boxCornerRadiusTopStart="16dp"
+        android:backgroundTint="#212020"
         app:boxCornerRadiusTopEnd="16dp"
         app:boxCornerRadiusBottomStart="16dp"
         app:boxCornerRadiusBottomEnd="16dp"
-        app:boxBackgroundColor="@android:color/white"
         app:endIconMode="password_toggle">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:textColor="@android:color/white"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -54,19 +57,20 @@
         android:layout_height="wrap_content"
         android:text="Confirm Password"
         android:textSize="16dp"
+        android:textColor="@android:color/white"
         android:textStyle="bold"
         android:layout_marginTop="35dp"
         android:id="@+id/text3"/>
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="New password"
+        android:hint="Confirm password"
+        android:backgroundTint="#212020"
         android:boxBackgroundMode="outline"
         app:boxCornerRadiusTopStart="16dp"
         app:boxCornerRadiusTopEnd="16dp"
         app:boxCornerRadiusBottomStart="16dp"
         app:boxCornerRadiusBottomEnd="16dp"
-        app:boxBackgroundColor="@android:color/white"
         app:endIconMode="password_toggle">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -79,7 +83,7 @@
         android:layout_width="350dp"
         android:layout_height="60dp"
         android:text="Continue"
-        android:backgroundTint="#3A59D1"
+        app:backgroundTint="@color/colorPrimary"
         android:id="@+id/button"
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
@@ -98,7 +102,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Already have an account?"
-            android:textColor="#000000"
+            android:textColor="@android:color/white"
             android:textSize="16sp" />
 
         <Button
@@ -116,6 +120,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/text5"
         android:text="Or"
+        android:textColor="@android:color/white"
         android:textSize="15dp"
         android:gravity="center"/>
     <LinearLayout
