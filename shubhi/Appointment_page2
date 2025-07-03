@@ -1,8 +1,10 @@
+
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#0B0B0B"
     android:layout_height="match_parent">
 
 
@@ -23,6 +25,7 @@
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
+                app:tint="@android:color/white"
                 android:src="@drawable/arrow_small_left" />
 
             <TextView
@@ -30,6 +33,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Appointments"
+                android:textColor="@android:color/white"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:layout_marginStart="8dp" />
@@ -37,12 +41,14 @@
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
+                app:tint="@android:color/white"
                 android:src="@drawable/search"
                 android:layout_marginLeft="130dp" />
 
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
+                app:tint="@android:color/white"
                 android:src="@drawable/heart"
                 android:layout_marginLeft="20dp" />
         </LinearLayout>
@@ -73,6 +79,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="Completed"
+                    android:textColor="@android:color/white"
                     android:gravity="center"
                     android:padding="10dp" />
 
@@ -82,6 +89,7 @@
                     android:layout_height="wrap_content"
                     android:text="Cancelled"
                     android:gravity="center"
+                    android:textColor="@android:color/white"
                     android:padding="10dp" />
             </LinearLayout>
 
@@ -99,6 +107,7 @@
             android:layout_height="wrap_content"
             android:text="Today"
             android:textSize="20sp"
+            android:textColor="@android:color/white"
             android:textStyle="bold"
             android:layout_marginTop="25dp" />
     </LinearLayout>
@@ -111,6 +120,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginTop="160dp"
         app:cardCornerRadius="12dp"
+        android:backgroundTint="#212020"
         app:cardElevation="6dp">
 
         <LinearLayout
@@ -130,58 +140,58 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Jennifer Miller"
-                android:layout_marginStart="15dp"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jennifer Miller"
+                    android:textColor="@android:color/white"
+                    android:layout_marginStart="15dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Psychologists | Apollo hospital"
                     android:layout_marginTop="6dp"
                     android:layout_marginLeft="15dp"
-                    android:textSize="16sp"
-                    android:textColor="#888888" />
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:layout_marginLeft="15dp"
                     android:orientation="horizontal">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="4.8 "
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="★"
-                    android:textSize="18sp"
-                    android:textColor="#FFD700"
-                    android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.8 "
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="★"
+                        android:textSize="18sp"
+                        android:textColor="#FFD700"
+                        android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="⏰ 10:30am - 5:30pm"
-
-                    android:layout_marginLeft="10dp"
-                    android:textStyle="bold"
-                    android:textSize="15sp"
-                    android:textColor="#555555" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="⏰ 10:30am - 5:30pm"
+                        android:textColor="@android:color/white"
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold"
+                        android:textSize="15sp" />
                 </LinearLayout>
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Book Appointment"
                     android:layout_marginTop="8dp"
-                    android:backgroundTint="#87CEEB" />
+                    app:backgroundTint="@color/colorPrimary" />
             </LinearLayout>
 
         </LinearLayout>
@@ -191,88 +201,90 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:backgroundTint="#212020"
         android:layout_marginEnd="16dp"
         android:layout_marginTop="340dp"
         app:cardCornerRadius="12dp"
         app:cardElevation="6dp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="13dp"
-        android:gravity="center_vertical">
-        <ImageView
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:layout_marginTop="-45dp"
-            android:src="@drawable/doctor" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Patricia Garcia"
-                android:layout_marginStart="15dp"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:textColor="@color/black" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Psychiatrist | Apollo hospital"
-                android:layout_marginTop="6dp"
-                android:layout_marginLeft="15dp"
-                android:textSize="16sp"
-                android:textColor="#888888" />
+            android:orientation="horizontal"
+            android:padding="13dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="-45dp"
+                android:src="@drawable/doctor" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginLeft="15dp"
-                android:orientation="horizontal">
+                android:orientation="vertical">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="4.8 "
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="★"
+                    android:text="Patricia Garcia"
+                    android:layout_marginStart="15dp"
+                    android:textColor="@android:color/white"
                     android:textSize="18sp"
-                    android:textColor="#FFD700"
                     android:textStyle="bold" />
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="⏰ 10:30am - 5:30pm"
+                    android:text="Psychiatrist | Apollo hospital"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.8 "
+                        android:textSize="16sp"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="★"
+                        android:textSize="18sp"
+                        android:textColor="#FFD700"
+                        android:textStyle="bold" />
 
-                    android:layout_marginLeft="10dp"
-                    android:textStyle="bold"
-                    android:textSize="15sp"
-                    android:textColor="#555555" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="⏰ 10:30am - 5:30pm"
+                        android:textColor="@android:color/white"
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold"
+                        android:textSize="15sp" />
+                </LinearLayout>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Book Appointment"
+                    android:layout_marginTop="8dp"
+                    app:backgroundTint="@color/colorPrimary" />
             </LinearLayout>
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Book Appointment"
-                android:layout_marginTop="8dp"
-                android:backgroundTint="#87CEEB" />
-        </LinearLayout>
 
-    </LinearLayout>
+        </LinearLayout>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/doctorInfoCard2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="#212020"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginTop="520dp"
@@ -302,7 +314,7 @@
                     android:layout_marginStart="15dp"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:textColor="@color/black" />
+                    android:textColor="@android:color/white"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -310,7 +322,7 @@
                     android:layout_marginTop="6dp"
                     android:layout_marginLeft="15dp"
                     android:textSize="16sp"
-                    android:textColor="#888888" />
+                    android:textColor="@android:color/white" />
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -321,6 +333,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="4.8 "
+                        android:textColor="@android:color/white"
                         android:textSize="16sp"
                         android:textStyle="bold" />
                     <TextView
@@ -335,21 +348,21 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="⏰ 10:30am - 5:30pm"
-
+                        android:textColor="@android:color/white"
                         android:layout_marginLeft="10dp"
                         android:textStyle="bold"
-                        android:textSize="15sp"
-                        android:textColor="#555555" />
+                        android:textSize="15sp" />
                 </LinearLayout>
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Book Appointment"
                     android:layout_marginTop="8dp"
-                    android:backgroundTint="#87CEEB" />
+                    app:backgroundTint="@color/colorPrimary" />
             </LinearLayout>
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
 </FrameLayout>
+
