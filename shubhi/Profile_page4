@@ -6,13 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#B7D7E8"
+    android:background="#0B0B0B"
     android:padding="16dp"
     tools:context=".MainActivity">
     <ImageView
         android:layout_width="24sp"
         android:layout_height="24sp"
-        android:src="@android:drawable/arrow_left"/>
+        android:src="@drawable/arrow_small_left"
+        app:tint="@android:color/white"/>
 
 
     <TextView
@@ -20,6 +21,7 @@
         android:layout_height="wrap_content"
         android:text="Enter OTP"
         android:layout_gravity="center"
+        android:textColor="@android:color/white"
         android:id="@+id/otptext"
         android:layout_marginTop="100sp"
         android:textSize="25dp"
@@ -38,6 +40,7 @@
         android:id="@+id/text2"
         android:text="User53684@gmail.com"
         android:textSize="18dp"
+        android:textColor="@android:color/white"
         android:gravity="center"
         android:layout_marginTop="10dp"/>
     <LinearLayout
@@ -174,6 +177,7 @@
         android:padding="16dp"
         android:text="We will resend the code in 59 s"
         android:textSize="15dp"
+        android:textColor="@android:color/white"
         android:gravity="center"
         android:layout_marginTop="10dp"/>
     <Button
@@ -182,7 +186,7 @@
         android:layout_gravity="center"
         android:text="Verify"
         android:textSize="18dp"
-        android:backgroundTint="#3A59D1"/>
+        android:backgroundTint="@color/colorPrimary"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -199,7 +203,7 @@
             android:layout_weight="1"
             android:text="Remembered password?"
             android:textSize="16sp"
-            android:textColor="#000000" />
+            android:textColor="@android:color/white" />
 
         <Button
             android:id="@+id/textbutton"
