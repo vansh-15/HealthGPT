@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:background="#FFF5F8"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="#F0E4E4"
+            app:cardElevation="6dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="#FFE0E6">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/bone"
+                    android:layout_marginEnd="12dp"
+                    android:contentDescription="Bone Icon" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Bone Consultant"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#4E342E" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/heart__1_"
+                    android:contentDescription="Favorite" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search bone supplements"
+            app:endIconTint="#BCAAA4"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="#F0E4E4"
+            app:cardElevation="4dp"
+            app:strokeColor="#D81B60">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/thinking"
+                    android:layout_marginEnd="16dp"
+                    android:contentDescription="Bone Icon" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Did You Know?"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="#D81B60" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Calcium absorption decreases with age. Ensure daily intake of Vitamin D3!"
+                        android:textSize="14sp"
+                        android:textColor="#004D40" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top Bone Health Picks"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#3E2723"
+            android:layout_marginBottom="12dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="160dp"
+                    android:layout_height="220dp"
+                    android:layout_marginEnd="12dp"
+                    android:backgroundTint="@android:color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="4dp"
+                    app:strokeColor="#FF8A65"
+                    app:strokeWidth="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/calcium"
+                            android:contentDescription="Calcium Supplement" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Calcium+Vitamin D3"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:textColor="#212121"
+                            android:gravity="center"
+                            android:paddingTop="8dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Buy 1 Get 1 Free"
+                            android:textSize="12sp"
+                            android:textColor="#D32F2F"
+                            android:gravity="center" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="160dp"
+                    android:layout_height="220dp"
+                    android:layout_marginEnd="12dp"
+                    android:backgroundTint="@android:color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="4dp"
+                    app:strokeColor="#8D6E63"
+                    app:strokeWidth="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/joint"
+                            android:contentDescription="Joint Care" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Joint Care Tabs"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:textColor="#212121"
+                            android:paddingTop="8dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="20% OFF"
+                            android:textSize="12sp"
+                            android:textColor="#D32F2F" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="160dp"
+                    android:layout_height="220dp"
+                    android:layout_marginEnd="12dp"
+                    android:backgroundTint="@android:color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="4dp"
+                    app:strokeColor="#FF7043"
+                    app:strokeWidth="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/collagen"
+                            android:contentDescription="Collagen Booster" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Collagen Booster"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:textColor="#212121"
+                            android:paddingTop="8dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Flat ₹299"
+                            android:textSize="12sp"
+                            android:textColor="#D32F2F" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="160dp"
+                    android:layout_height="220dp"
+                    android:layout_marginEnd="12dp"
+                    android:backgroundTint="@android:color/white"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="4dp"
+                    app:strokeColor="#FFA000"
+                    app:strokeWidth="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:contentDescription="Vitamin K2 D3"
+                            android:src="@drawable/vitamin" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Vitamin K2 + D3"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:textColor="#212121"
+                            android:paddingTop="8dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Best Seller"
+                            android:textSize="12sp"
+                            android:textColor="#D32F2F" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="8dp"
+                    app:strokeColor="#FF8665">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="127dp"
+                            android:layout_marginEnd="12dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/bone_strength" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Bone Strength Formula"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textColor="#2E7D32" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Advanced support for bone density"
+                                android:textSize="14sp"
+                                android:textColor="#444444"
+                                android:paddingTop="4dp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Buy Now"
+                                android:textColor="@android:color/white"
+                                android:backgroundTint="#C2185B"
+                                android:layout_marginTop="8dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="127dp"
+                            android:layout_marginEnd="12dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/magnesium"
+                            android:contentDescription="Magnesium and Zinc" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Magnesium + Zinc Tablets"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textColor="#2E7D32" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Supports bone density and muscle strength"
+                                android:textSize="14sp"
+                                android:textColor="#444444"
+                                android:paddingTop="4dp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Buy Now"
+                                android:textColor="@android:color/white"
+                                android:backgroundTint="#C2185B"
+                                android:layout_marginTop="8dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- 🟨 Calcium + Vitamin D3 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="127dp"
+                            android:layout_marginEnd="12dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/calcium" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Calcium + Vitamin D3"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:textColor="#2E7D32" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Strengthens bones and teeth"
+                                android:textSize="14sp"
+                                android:textColor="#444444"
+                                android:paddingTop="4dp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Buy Now"
+                                android:textColor="@android:color/white"
+                                android:backgroundTint="#C2185B"
+                                android:layout_marginTop="8dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</ScrollView>
